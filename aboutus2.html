@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Our Team</title>
+    <style>
+        body {border:6px solid rgb(255, 123, 0);
+            font-family: 'Inter', sans-serif;
+            background-color: #ffe4b5; /* Off-white from your palette */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        .main-heading {
+            box-shadow: 0 8px 16px rgba(241, 152, 27, 0.9);
+            border:2px solid rgb(255, 145, 0);
+            background: linear-gradient(to right, #FCCEAD, #FFE5D0); /* Gradient for mission section */
+            padding: 20px;
+            border-radius: 20px;
+            font-size: 3.5rem;
+            font-weight: bold;
+            color: #fa7109;
+            text-shadow:  0 12px 24px rgba(212, 164, 32, 0.9);
+            margin-bottom: 50px;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+        .team-member-grid {
+            display: grid;
+            grid-template-columns: 1fr; /* Single column by default */
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .team-member-card {
+            padding: 30px;
+            border-radius: 15px;
+            border:2px solid  salmon;
+            box-shadow: 0 8px 16px rgba(242, 125, 8, 0.9);
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            color: #fff; /* Changed text color to white for better contrast on gradients */
+            display: flex; /* Use flexbox for content alignment */
+            flex-direction: column;
+            justify-content: space-between; /* Distribute space */
+        }
+        .team-member-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+        /* Specific gradient colors for each team member card */
+        .team-member-card.abdul-basit {
+            background: linear-gradient(to right, #eebbf9, #fca7ef); /* Orange to Lighter Orange */
+        }
+        .team-member-card.simran-waseem {
+            background: linear-gradient(to right, #e6f296, #a0da98); /* Very Light Orange to Off-White */
+        }
+        .team-member-card.hamnah-khan {/* Blush */
+            border: 2px solid #FF6D00;
+            box-shadow: 0 5px 15px rgba(233, 127, 35, 0.9);
+            background: linear-gradient(to right, #9ec2ef, #78a2f0); /* Pink/Purple to Purple */
+        }
+        .team-member-card.ayan-khan {
+            background: linear-gradient(to right, #FBB189, #FAC7F1); /* Orange to Pink/Purple */
+        }
+
+        .member-name {
+            font-size: 2rem;
+            font-weight: bold;
+            color: brown; /* Dark text for better contrast on gradients */
+            margin-bottom: 10px;
+        }
+        .member-designation {
+            font-size: 1.2rem;
+            color: #ea4081; /* Darker grey for designation */
+            margin-bottom: 20px;
+        }
+        .member-description {
+            font-size: 1.1rem;
+            color: #b34646; /* Slightly darker text for description */
+            text-align: left;
+            padding: 0 15px;
+            flex-grow: 1; /* Allows description to take available space */
+        }
+
+        .mission-section {box-shadow: 0 8px 16px rgba(241, 152, 27, 0.9);
+            border:2px solid rgb(255, 145, 0);
+            background: linear-gradient(to right, #f9c29b, #f4a464); /* Gradient for mission section */
+            padding: 20px;
+            border-radius: 20px;
+            
+            margin-top: 20px;
+            color: #4a0404; /* Darker text for contrast on orange */
+        }
+        .mission-heading {
+            font-size: 2.5rem;
+            font-weight: bold;
+            
+        
+color :white;
+            margin-bottom: 25px;
+        }
+        .mission-paragraph {
+            font-size: 1.15rem;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Responsive adjustments */
+        @media (min-width: 600px) {
+            .team-member-grid {
+                grid-template-columns: repeat(2, 1fr); /* Two columns on larger screens */
+            }
+        }
+        @media (min-width: 900px) {
+            .team-member-grid {
+                grid-template-columns: repeat(2, 1fr); /* Still two columns, adjust container max-width if more needed */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-heading">Meet Our Amazing Team!</h1>
+
+        <div class="team-member-grid">
+            <!-- Abdul Basit -->
+            <div class="team-member-card abdul-basit">
+                <div>
+                    <h2 class="member-name">Abdul Basit</h2>
+                    <p class="member-designation">Student of DISM</p>
+                </div>
+                <p class="member-description">Abdul Basit is the visionary leader of our group, guiding our efforts with strategic insight and dedication. He is primarily responsible for all foundational research, ensuring our content is accurate and engaging. His creative touch is evident in the beautifully designed 'Nursery Rhymes' and 'Alphabets' pages, which lay the groundwork for early learning on our platform.</p>
+            </div>
+
+            <!-- Simran Waseem -->
+            <div class="team-member-card simran-waseem">
+                <div>
+                    <h2 class="member-name">Simran Waseem</h2>
+                    <p class="member-designation">Student of DISM</p>
+                </div>
+                <p class="member-description">Simran Waseem is the innovative developer behind our interactive math learning experience. She meticulously crafted the dynamic 'Maths' section, including the engaging quizzes for Addition, Subtraction, Counting, and Multiplication. She also developed the code for the 'About Us' page. Her work ensures that children can practice and master fundamental math skills in a fun and interactive environment.</p>
+            </div>
+
+            <!-- Hamnah Khan -->
+            <div class="team-member-card hamnah-khan">
+                <div>
+                    <h2 class="member-name">Hamnah Khan</h2>
+                    <p class="member-designation">Student of HDSE</p>
+                </div>
+                <p class="member-description">Hamnah Khan is the creative force responsible for the aesthetic and functional aspects of our website. She designed and implemented the captivating landing page, providing a welcoming first impression. Furthermore, she developed the informative 'Days of Week and Months' and 'Color' pages, and integrated the crucial user login and signup functionalities, enhancing user experience and accessibility.</p>
+            </div>
+
+            <!-- Ayan Khan -->
+            <div class="team-member-card ayan-khan">
+                <div>
+                    <h2 class="member-name">Ayan Khan</h2>
+                    <p class="member-designation">Student of DISM</p>
+                </div>
+                <p class="member-description">Ayan Khan is the content creator who brought the 'Animal' and 'Vegetable' pages to life, adding a rich layer of educational content to our platform. His meticulous work ensures these sections are informative and visually appealing for young learners. Additionally, he developed the 'Contact Us' page, providing a vital channel for user feedback and support.</p>
+            </div>
+        </div>
+
+        <!-- Our Mission Section -->
+        <div class="mission-section">
+            <h2 class="mission-heading">Our Mission</h2>
+            <p class="mission-paragraph">
+                Our mission in creating this educational website is to revolutionize early childhood learning by making it an exciting and interactive adventure. We are dedicated to providing a comprehensive, fun, and accessible platform where children can explore fundamental concepts in mathematics, language, and general knowledge. By integrating engaging quizzes, colorful flashcards, and easy-to-understand lessons, we aim to ignite a lifelong passion for learning. Our goal is to empower young minds with essential skills, foster curiosity, and support parents and educators in nurturing the next generation of confident learners. We believe that learning should be a joyous journey, and this website is our contribution to that vision.
+            </p>
+        </div>
+    </div>
+</body>
+</html>

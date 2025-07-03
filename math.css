@@ -1,0 +1,306 @@
+
+body {border:6px solid rgb(252, 86, 10);
+    font-family: 'Inter', sans-serif;
+    background-color: #f5c889; /* Changed to off-white from new palette */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.section-heading {
+    font-size: 3rem; /* Increased font size */
+    font-weight: bold;
+    color: #f34713;
+    text-shadow:0 10px 20px rgba(238, 241, 30, 0.8) ; /* Darker text for headings, can be customized per section */
+    margin-bottom: 20px;
+    text-align: center;
+}
+.lesson-content, .quiz-content {
+    background-color: #f8d4aa;
+    padding: 30px;
+    border-radius: 15px;border:2px solid #f67935;
+    box-shadow: 0 10px 20px rgba(236, 96, 96, 0.9);
+    margin-bottom: 40px;justify-content: center;
+}
+
+/* Flashcard styles */
+.flashcard {border:4px solid  #f36913;
+    /* box-shadow: 0 10px 20px rgba(241, 38, 38, 0.9); */
+    background-color: #fdf279; /* Changed to light orange/peach from new palette */
+    border-radius: 50px;
+    padding: 20px;
+    display: flex;
+    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4a0404; /* Darker text for contrast */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.flashcard:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+.flashcard-number {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color:rgb(194, 40, 117);
+}
+.flashcard-number .emojis {
+    font-size: 2.5rem;
+}
+.flashcard-spelling {
+    font-size: 1.8rem;
+    text-transform: capitalize;
+    color:rgb(194, 40, 117);
+}
+
+/* Quiz styles */
+.quiz-section-heading { /* Specific class for quiz headings */
+    font-size: 3rem; /* Increased font size for quiz headings */
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #f45905; /* Changed to orange from new palette */
+    text-align: center; /* Centered quiz headings */
+}
+.quiz-question {
+    font-size: 2rem; /* Increased font size for quiz questions */
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #f0198f; /* Darker text for questions */
+}
+.quiz-container {
+    background-color: #f7c625; /* Changed to lighter orange from new palette */
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(234, 163, 22, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.quiz-input {
+    padding: 12px 20px;
+    border: 2px solid #ee5e11; /* Orange border for input */
+    border-radius: 8px;
+    font-size: 1.2rem;
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.quiz-result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+.correct {
+    color: #10b95f; /* Green for correct */
+}
+.incorrect {
+    color: #ce3939; /* Red for incorrect */
+}
+
+/* Button styles */
+.card-button, .quiz-action-button {
+    background-color: #f3e95a; /* Changed to orange from new palette */
+    color: rgb(248, 87, 7);
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(238, 137, 65, 0.9);
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+.card-button:hover, .quiz-action-button:hover {
+    background-color: #fac6a9; /* Slightly darker orange on hover */
+    transform: translateY(-2px);
+}
+.quiz-action-buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+/* Table styles */
+.multiplication-tables-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+}
+.table-card {
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+    text-align: center;
+    color: #4a0404; /* Dark text for contrast */
+}
+/* Specific colors for each table card from new palette */
+.table-card:nth-child(1) { background-color: #e8f681; } /* Table of 2 - Orange */
+.table-card:nth-child(2) { background-color: #f1cf7b; } /* Table of 3 - Lighter Orange */
+.table-card:nth-child(3) { background-color: #f6b986; } /* Table of 4 - Very light orange/peach */
+.table-card:nth-child(4) { background-color: #d0c266; } /* Table of 5 - Purple */
+
+.table-heading {
+    font-size: 2.5rem; /* Increased font size for table headings */
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: #f85d09; /* Used a vibrant orange for heading */
+}
+.table-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border:2px solid orange;
+}
+.table-row {
+    padding: 10px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.table-row:last-child {
+    border-bottom: none;
+}
+
+/* Top button cards styles */
+.top-buttons-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.main-title {
+    font-size: 5rem; /* Increased font size for main title */
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 48px;
+    color: #f94808;text-shadow:0 10px 20px rgba(238, 241, 30, 0.8); 
+    font-family: 'Comic Neue', cursive;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 32px;
+    
+}
+.topic-card { 
+    
+    padding:40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 20px rgba(244, 104, 18, 0.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgb(194, 40, 117);
+    text-align: center;
+    min-height: 220px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.topic-card:hover {
+    transform: translateY(-8px);
+    
+}
+.topic-card-icon {
+    font-size: 4.5rem;
+    margin-bottom: 20px;
+}
+.topic-card-title {
+    font-size: 3rem; /* Increased font size for topic card titles */
+    font-weight: bold;
+    margin-bottom: 25px;
+    
+}
+.topic-card-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* New Color Codes Applied to cards */
+.counting-card {border: 4px solid #f45905; background-color: #a0ed86; } /* Orange */
+.multiplication-card {border: 4px solid #f45905; background-color: #67dab1; } /* Lighter Orange */
+.addition-card {border: 4px solid #f45905; background-color: #a0ed86; } /* Pink/Purple */
+.subtraction-card {border: 4px solid #f45905; background-color: #67dab1; } /* Purple */
+
+/* Styles for lesson content boxes with new colors */
+.addition-lesson-box {
+    background-color: #f4fac7; /* Pink/Purple */
+    color: #4a0404;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.subtraction-lesson-box {
+    background-color: #f4fac7; /* Purple */
+    color: #4a0404;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (min-width: 640px) {
+    .grid-container, .multiplication-tables-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .topic-card {
+        padding: 25px;
+        min-height: 200px;
+    }
+    .topic-card-icon {
+        font-size: 3.5rem;
+    }
+    .topic-card-title {
+        font-size: 2rem;
+    }
+    .topic-card-buttons {
+        gap: 12px;
+    }
+    .addition-lesson-box, .subtraction-lesson-box {
+        font-size: 1.2rem;
+    }
+    .main-title {
+        font-size: 4rem;
+    }
+    .section-heading {
+        font-size: 2.5rem;
+    }
+    .table-heading {
+        font-size: 2rem;
+    }
+    .topic-card-title {
+        font-size: 2.25rem;
+    }
+    .quiz-section-heading {
+        font-size: 2.5rem; /* Adjusted for smaller screens */
+    }
+    .quiz-question {
+        font-size: 1.5rem; /* Adjusted for smaller screens */
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container, .multiplication-tables-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}

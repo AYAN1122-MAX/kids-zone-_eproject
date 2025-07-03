@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Gallery</title>
+    <style>
+        body {border:6px solid orange;
+            font-family: Arial, sans-serif;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        h1 {
+            text-align: center;
+            color: #e19f24;
+        }
+        .animal-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .animal-card {
+            background-color: rgb(248, 230, 218);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 250px;
+            transition: transform 0.3s;
+        }
+        .animal-card:hover {
+            transform: translateY(-5px);
+        }
+        .animal-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .animal-name {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: #de563a;
+        }
+        .paragraph{
+            padding:15px;
+            text-align: center;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Animal Gallery</h1><br><br>
+    
+    <div class="animal-container">
+        <!-- Lion -->
+        <div class="animal-card">
+            <img src="https://images.unsplash.com/photo-1534188753412-3e26d0d618d6" alt="Lion" class="animal-image">
+            <div class="animal-name">Lion</div>
+            <div class="paragraph">Lions are big, powerful cats often called the "king of the jungle."</div>
+       </div>
+        
+        <!-- Elephant -->
+        <div class="animal-card">
+            <img src="https://images.unsplash.com/photo-1505148230895-d9a785a555fa" alt="Elephant" class="animal-image">
+            <div class="animal-name">Elephant</div>
+            <div class="paragraph">Elephants are the largest land animals on earth! They have a huge body, long trunks, big ears, and wrinkly grey or brown skin.</div>
+        </div>
+        
+        <!-- Giraffe -->
+        <div class="animal-card">
+            <img src="images.jpeg" alt="Giraffe" class="animal-image">
+            <div class="animal-name">Giraffe</div>
+            <div class="paragraph">Giraffes are tall, gentle animals with very long necks and legs, making them the tallest living land animals on Earth.</div>
+        </div>
+        
+        <!-- Tiger -->
+        <div class="animal-card">
+            <img src="download (1).jpeg" alt="Tiger" class="animal-image">
+            <div class="animal-name">Tiger</div>
+           <div class="paragraph">A tiger is a big cat with orange fur and black stripes. It's the largest cat in the world and a powerful hunter.</div> 
+        </div>
+        
+        <!-- Penguin -->
+        <div class="animal-card">
+            <img src="download.jpeg" alt="Penguin" class="animal-image">
+            <div class="animal-name">Penguin</div>
+            <div class="paragraph">Penguins are famous for their waddling walk and are excellent swimmers, using their flippers (short, paddle-like wings) to move through the water. </div>
+        </div>
+        
+        <!-- Dolphin -->
+        <div class="animal-card">
+            <img src="download (2).jpeg" alt="Dolphin" class="animal-image">
+            <div class="animal-name">Dolphin</div>
+            <div class="paragraph">Dolphins are amazing sea mammals known for their intelligence and playful nature. </div>
+        </div>
+    
+         <!-- Cat -->
+        <div class="animal-card">
+            <img src="images (1).jpeg" alt="Cat" class="animal-image">
+            <div class="animal-name">Cat</div>
+            <div class="paragraph">Cats are furry, four-legged mammals known for their playful and cuddly nature. They come in many sizes, colors, and coat lengths, and are popular pets for kids </div>
+        </div>
+
+         <!--Dog-->
+        <div class="animal-card">
+            <img src="images (2).jpeg" alt="Dog" class="animal-image">
+            <div class="animal-name">Dog</div>
+            <div class="paragraph">Dogs are furry, four-legged mammals known as "man's best friend". They are often playful and loyal companions, and come in many different sizes, shapes, and colors</div>
+        </div>
+
+         <!--Butterfly-->
+        <div class="animal-card">
+            <img src="download (5).jpeg" alt="Butterfly" class="animal-image">
+            <div class="animal-name">Butterfly</div>
+            <div class="paragraph">Butterflies are beautiful flying insects with colorful, patterned wings. They have six legs, two antennae, and three body parts: a head, thorax, and abdomen.</div>
+        </div>
+
+         <!--Peacock-->
+        <div class="animal-card">
+            <img src="download (6).jpeg" alt="Peacock" class="animal-image">
+            <div class="animal-name">Peacock</div>
+            <div class="paragraph">Peacocks are big, beautiful birds, especially the males, with long, colorful tail feathers that they can fan out like a colorful fan.</div>
+        </div>
+</body>
+</html>

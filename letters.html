@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete ABC Learning</title>
+    <style>
+        body { border:6px solid #f4801b;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #e5d9cf;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 { padding:30px;
+            color:#e66542;
+            text-decoration: underline;
+            text-shadow: 2px 2px 4px #ccc;
+            margin-bottom: 5px;
+            font-size: 50px;
+        
+        }
+        .subtitle {
+            color: #e69742;
+            margin-bottom: 20px;
+        }
+        .letters-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        .letter-section {
+            width: 45%;
+            min-width: 300px;
+            margin-bottom: 30px;
+        }
+        .section-title {
+            background-color: #ffd166;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            font-size: 24px;
+            margin-bottom: 15px;
+            text-shadow: 1px 1px 2px #888;
+        }
+        .letter-card {
+            background-color: rgb(243, 186, 186);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(234, 26, 26, 0.9);
+            margin: 10px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+        .letter-small {
+            background-color: rgb(163, 239, 176);
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(87, 234, 24, 0.9);
+            margin: 10px;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            transition: transform 0.3s;
+        }
+            .letter-small:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .letter-card:hover {
+            transform: scale(1.03);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .letter { 
+            font-size: 40px;
+            width: 60px;
+            text-align: center;
+            margin-right: 15px;
+        }
+        .capital {
+            color: #ef476f;
+            font-weight: bold;
+        }
+        .small {
+            color: #05b485;
+        }
+        .example {
+            flex-grow: 1;
+        }
+        .example-word { color:BLACK;
+            font-size: 20px;
+            font-weight:bolder;
+            margin-bottom: 5px;
+        }
+        .example-image {
+            font-size: 30px;
+            margin-right: 10px;
+        }
+        @media (max-width: 700px) {
+            .letters-container {
+                flex-direction: column;
+            }
+            .letter-section {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Complete ABC Learning</h1>
+    <p class="subtitle">All Capital and Small Letters with Fun Examples!</p><br>
+    
+    <div class="letters-container">
+        <div class="letter-section">
+            <div class="section-title" style="background-color: #ef476f;">Capital Letters</div>
+            
+            <div class="letter-card">
+                <div class="letter capital">A</div>
+                <div class="example-image">🍎</div>
+                <div class="example">
+                    <div class="example-word">Apple</div>
+                    <div>"A is for Apple"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">B</div>
+                <div class="example-image">🐻</div>
+                <div class="example">
+                    <div class="example-word">Bear</div>
+                    <div>"B is for Bear"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">C</div>
+                <div class="example-image">🐱</div>
+                <div class="example">
+                    <div class="example-word">Cat</div>
+                    <div>"C is for Cat"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">D</div>
+                <div class="example-image">🐶</div>
+                <div class="example">
+                    <div class="example-word">Dog</div>
+                    <div>"D is for Dog"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">E</div>
+                <div class="example-image">🐘</div>
+                <div class="example">
+                    <div class="example-word">Elephant</div>
+                    <div>"E is for Elephant"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">F</div>
+                <div class="example-image">🐟</div>
+                <div class="example">
+                    <div class="example-word">Fish</div>
+                    <div>"F is for Fish"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">G</div>
+                <div class="example-image">🦒</div>
+                <div class="example">
+                    <div class="example-word">Giraffe</div>
+                    <div>"G is for Giraffe"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">H</div>
+                <div class="example-image">🐴</div>
+                <div class="example">
+                    <div class="example-word">Horse</div>
+                    <div>"H is for Horse"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">I</div>
+                <div class="example-image">🍦</div>
+                <div class="example">
+                    <div class="example-word">Ice Cream</div>
+                    <div>"I is for Ice Cream"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">J</div>
+                <div class="example-image">🪼</div>
+                <div class="example">
+                    <div class="example-word">Jellyfish</div>
+                    <div>"J is for Jellyfish"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">K</div>
+                <div class="example-image">🐨</div>
+                <div class="example">
+                    <div class="example-word">Koala</div>
+                    <div>"K is for Koala"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">L</div>
+                <div class="example-image">🦁</div>
+                <div class="example">
+                    <div class="example-word">Lion</div>
+                    <div>"L is for Lion"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">M</div>
+                <div class="example-image">🐭</div>
+                <div class="example">
+                    <div class="example-word">Mouse</div>
+                    <div>"M is for Mouse"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">N</div>
+                <div class="example-image">🐦</div>
+                <div class="example">
+                    <div class="example-word">Nest</div>
+                    <div>"N is for Nest"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">O</div>
+                <div class="example-image">🐙</div>
+                <div class="example">
+                    <div class="example-word">Octopus</div>
+                    <div>"O is for Octopus"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">P</div>
+                <div class="example-image">🐧</div>
+                <div class="example">
+                    <div class="example-word">Penguin</div>
+                    <div>"P is for Penguin"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">Q</div>
+                <div class="example-image">👑</div>
+                <div class="example">
+                    <div class="example-word">Queen</div>
+                    <div>"Q is for Queen"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">R</div>
+                <div class="example-image">🐇</div>
+                <div class="example">
+                    <div class="example-word">Rabbit</div>
+                    <div>"R is for Rabbit"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">S</div>
+                <div class="example-image">🐍</div>
+                <div class="example">
+                    <div class="example-word">Snake</div>
+                    <div>"S is for Snake"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">T</div>
+                <div class="example-image">🐯</div>
+                <div class="example">
+                    <div class="example-word">Tiger</div>
+                    <div>"T is for Tiger"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">U</div>
+                <div class="example-image">☂️</div>
+                <div class="example">
+                    <div class="example-word">Umbrella</div>
+                    <div>"U is for Umbrella"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">V</div>
+                <div class="example-image">🦖</div>
+                <div class="example">
+                    <div class="example-word">Velociraptor</div>
+                    <div>"V is for Velociraptor"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">W</div>
+                <div class="example-image">🐋</div>
+                <div class="example">
+                    <div class="example-word">Whale</div>
+                    <div>"W is for Whale"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">X</div>
+                <div class="example-image">🎻</div>
+                <div class="example">
+                    <div class="example-word">Xylophone</div>
+                    <div>"X is for Xylophone"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">Y</div>
+                <div class="example-image">🪀</div>
+                <div class="example">
+                    <div class="example-word">Yo-yo</div>
+                    <div>"Y is for Yo-yo"</div>
+                </div>
+            </div>
+            
+            <div class="letter-card">
+                <div class="letter capital">Z</div>
+                <div class="example-image">🦓</div>
+                <div class="example">
+                    <div class="example-word">Zebra</div>
+                    <div>"Z is for Zebra"</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="letter-section">
+            <div class="section-title" style="background-color: #06d6a0;">Small Letters</div>
+            
+            <div class="letter-small">
+                <div class="letter small">a</div>
+                <div class="example-image">🐜</div>
+                <div class="example">
+                    <div class="example-word">ant</div>
+                    <div>"a is for ant"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">b</div>
+                <div class="example-image">🦋</div>
+                <div class="example">
+                    <div class="example-word">butterfly</div>
+                    <div>"b is for butterfly"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">c</div>
+                <div class="example-image">🐛</div>
+                <div class="example">
+                    <div class="example-word">caterpillar</div>
+                    <div>"c is for caterpillar"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">d</div>
+                <div class="example-image">🦆</div>
+                <div class="example">
+                    <div class="example-word">duck</div>
+                    <div>"d is for duck"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">e</div>
+                <div class="example-image">🐘</div>
+                <div class="example">
+                    <div class="example-word">elephant</div>
+                    <div>"e is for elephant"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">f</div>
+                <div class="example-image">🐸</div>
+                <div class="example">
+                    <div class="example-word">frog</div>
+                    <div>"f is for frog"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">g</div>
+                <div class="example-image">🦍</div>
+                <div class="example">
+                    <div class="example-word">gorilla</div>
+                    <div>"g is for gorilla"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">h</div>
+                <div class="example-image">🐝</div>
+                <div class="example">
+                    <div class="example-word">honeybee</div>
+                    <div>"h is for honeybee"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">i</div>
+                <div class="example-image">🦔</div>
+                <div class="example">
+                    <div class="example-word">iguana</div>
+                    <div>"i is for iguana"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">j</div>
+                <div class="example-image">🪼</div>
+                <div class="example">
+                    <div class="example-word">jellyfish</div>
+                    <div>"j is for jellyfish"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">k</div>
+                <div class="example-image">🐨</div>
+                <div class="example">
+                    <div class="example-word">koala</div>
+                    <div>"k is for koala"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">l</div>
+                <div class="example-image">🦙</div>
+                <div class="example">
+                    <div class="example-word">llama</div>
+                    <div>"l is for llama"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">m</div>
+                <div class="example-image">🐒</div>
+                <div class="example">
+                    <div class="example-word">monkey</div>
+                    <div>"m is for monkey"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">n</div>
+                <div class="example-image">🐿️</div>
+                <div class="example">
+                    <div class="example-word">nut</div>
+                    <div>"n is for nut"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">o</div>
+                <div class="example-image">🦉</div>
+                <div class="example">
+                    <div class="example-word">owl</div>
+                    <div>"o is for owl"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">p</div>
+                <div class="example-image">🐼</div>
+                <div class="example">
+                    <div class="example-word">panda</div>
+                    <div>"p is for panda"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">q</div>
+                <div class="example-image">👸</div>
+                <div class="example">
+                    <div class="example-word">queen</div>
+                    <div>"q is for queen"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">r</div>
+                <div class="example-image">🐇</div>
+                <div class="example">
+                    <div class="example-word">rabbit</div>
+                    <div>"r is for rabbit"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">s</div>
+                <div class="example-image">🐍</div>
+                <div class="example">
+                    <div class="example-word">Snake</div>
+                    <div>"s is for snake"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small"> 
+                <div class="letter small">t</div>
+                <div class="example-image">🐢</div>
+                <div class="example">
+                    <div class="example-word">turtle</div>
+                    <div>"t is for turtle"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">u</div>
+                <div class="example-image">🦄</div>
+                <div class="example">
+                    <div class="example-word">unicorn</div>
+                    <div>"u is for unicorn"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">v</div>
+                <div class="example-image">🦖</div>
+                <div class="example">
+                    <div class="example-word">velociraptor</div>
+                    <div>"v is for velociraptor"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">w</div>
+                <div class="example-image">🐋</div>
+                <div class="example">
+                    <div class="example-word">whale</div>
+                    <div>"w is for whale"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">x</div>
+                <div class="example-image">🎻</div>
+                <div class="example">
+                    <div class="example-word">xylophone</div>
+                    <div>"x is in xylophone"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">y</div>
+                <div class="example-image">🪀</div>
+                <div class="example">
+                    <div class="example-word">yo-yo</div>
+                    <div>"y is for yo-yo"</div>
+                </div>
+            </div>
+            
+            <div class="letter-small">
+                <div class="letter small">z</div>
+                <div class="example-image">🦓</div>
+                <div class="example">
+                    <div class="example-word">zebra</div>
+                    <div>"z is for zebra"</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

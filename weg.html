@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veggie Friends - Learn About Vegetables</title>
+    <style>
+        body {border:7px solid #f3740c;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #f8efe6;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #f3740c;
+            text-shadow: 2px 2px 4px #ccc;
+            font-size: 2.5em;
+        }
+        
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .vegetable-card {
+            background-color: rgb(244, 235, 207);
+            border-radius: 15px;
+            padding: 15px;
+            width: 200px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .vegetable-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .vegetable-img {
+            width: 150px;
+            height: 150px;
+            /* border-radius: 30px; */
+            object-fit: contain;
+            margin-bottom: 10px;
+        }
+        
+        .vegetable-name {
+            font-size: 1.5em;
+            color: #f3740c;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .fun-fact {
+            font-size: 0.9em;
+            color: #666;
+            font-style: italic;
+        }
+        
+        footer {
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <h1>🌽 Vegetable Gallery 🥕</h1>
+    
+    <div class="container">
+        <!-- Carrot -->
+        <div class="vegetable-card">
+            <img src="carrot-removebg-preview.png" alt="Carrot" class="vegetable-img">
+            <div class="vegetable-name">Carrot</div>
+            <div class="fun-fact">Bunnies love me and I help you see in the dark!</div>
+        </div>
+        
+        <!-- Tomato -->
+        <div class="vegetable-card">
+            <img src="tomatoo-removebg-preview.png" alt="Tomato" class="vegetable-img">
+            <div class="vegetable-name">Tomato</div>
+            <div class="fun-fact">I'm actually a fruit, but everyone calls me a vegetable!</div>
+        </div>
+        
+        <!-- Broccoli -->
+        <div class="vegetable-card">
+            <img src="borrocoli-removebg-preview.png" alt="Broccoli" class="vegetable-img">
+            <div class="vegetable-name">Broccoli</div>
+            <div class="fun-fact">I look like tiny trees and I'm packed with vitamins!</div>
+        </div>
+        
+        <!-- Cucumber -->
+        <div class="vegetable-card">
+            <img src="cucumber-removebg-preview.png" alt="Cucumber" class="vegetable-img">
+            <div class="vegetable-name">Cucumber</div>
+            <div class="fun-fact">I'm 95% water - I can help keep you hydrated!</div>
+        </div>
+        
+        <!-- Bell Pepper -->
+        <div class="vegetable-card">
+            <img src="Bell-Pepper-removebg-preview (1).png" alt="Bell Pepper" class="vegetable-img">
+            <div class="vegetable-name">Bell Pepper</div>
+            <div class="fun-fact">I come in red, yellow, and green - like a traffic light!</div>
+        </div>
+        
+        <!-- Potato -->
+        <div class="vegetable-card">
+            <img src="potato-removebg-preview.png" alt="Potato" class="vegetable-img">
+            <div class="vegetable-name">Potato</div>
+            <div class="fun-fact">I can be mashed, fried, or baked - so many ways to eat me!</div>
+        </div>
+        <div class="vegetable-card">
+            <img src="corn-removebg-preview.png" alt="Corn" class="vegetable-img">
+            <div class="vegetable-name">Corn</div>
+            <div class="fun-fact">You can eat me boiled, grilled, or popped into fluffy clouds (yes, I turn into popcorn!)</div>
+        </div>
+    </div>
+    <br>
+    <footer>
+        <p>Made with ❤️ for little Children! Try eating vegetables every day!</p>
+    </footer>
+</body>
+</html>

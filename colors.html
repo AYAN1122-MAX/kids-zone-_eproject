@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainbow Colors Fun!</title>
+    <style>
+        body { border:6px solid #FF6D00;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #faf7f6;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #ff6b6b;
+            text-shadow: 2px 2px 4px #ccc;
+            text-decoration: underline;
+        }
+        
+        .color-box {
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            margin: 15px;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .color-box:hover {
+            transform: scale(1.05);
+        }
+        
+        .color-name {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 20px;
+            background-color: rgba(255,255,255,0.7);
+            padding: 10px;
+            font-weight: bold;
+            font-size: 24px;
+        }
+        
+        .red { 
+            background-color: #f73333;
+            color:red;
+            border:2px solid red;
+            box-shadow: 4px 4px 8px rgba(237, 97, 97, 5); 
+        }
+        .orange {
+             background-color: #ffa500;
+             color:rgb(255, 123, 0);
+            border:2px solid rgb(255, 136, 0);
+            box-shadow: 4px 4px 8px rgba(243, 183, 78, 5); 
+         }
+        .yellow { 
+            background-color: #fafa6c; 
+            color:rgba(168, 168, 18, 0.898);
+            border:2px solid yellow;
+            box-shadow: 4px 4px 8px  rgba(244, 247, 21, 5); 
+        }
+        .green {
+             background-color: #008000;
+             color:green;
+            border:2px solid green;
+            box-shadow: 4px 4px 8px rgba(22, 117, 5, 5); 
+         }
+        .blue { 
+            background-color: #3a3aee; 
+            color:blue;
+            border:2px solid blue;
+            box-shadow: 4px 4px 8px rgba(22, 82, 234, 5); 
+        }
+        .purple { 
+            background-color: #800080;
+            color:purple;
+            border:2px solid purple;
+            box-shadow: 4px 4px 8px rgba(128, 17, 165, 5); 
+         }
+         .brown { 
+            background-color:rgb(155, 44, 44);
+            color:brown;
+            border:2px solid brown;
+            box-shadow: 4px 4px 8px rgba(164, 55, 55, 5); 
+         }
+         .black { 
+            background-color:rgb(8, 1, 1);
+            color:black;
+            border:2px solid black;
+            box-shadow: 4px 4px 8px rgba(16, 15, 15, 5); 
+         }
+         .white{ 
+            background-color:rgb(229, 227, 227);
+            color:black;
+            border:2px solid whitesmoke;
+            box-shadow: 4px 4px 8px rgba(196, 194, 194, 5); 
+         }
+        
+        .fun-facts {
+           
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 800px;
+            
+        }
+        .fun-facts h2{
+            font-size: 2rem;
+        }
+        h2{
+            font-size: 2rem;
+            color:#f4801b;
+            text-decoration: underline;
+        }
+        .fun-facts p{
+            color:grey;
+        }
+        .activity { 
+            border:5px solid #f4801b;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        
+        
+        footer {
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+        img{ 
+            margin-top:4px;
+            margin-bottom:6px;
+            border-radius: 40px;
+            height: 140px;
+            object-fit: contain;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>🌈 Welcome to the Color Fun Zone! 🌈</h1>
+    
+    <div class="fun-facts">
+        <h2 style="color: #f4801b;">Let's Learn About Colors!</h2>
+        <p>Colors are all around us! They make our world beautiful and exciting. Let's explore the rainbow colors together!</p>
+    </div>
+    
+    <h2 >The Rainbow Colors</h2>
+    
+    <div class="color-box red">
+        <img src="red.png">
+        <div class="color-name">Red</div>
+    </div>
+    
+    <div class="color-box orange">
+        <img src="theorange.png">
+        <div class="color-name">Orange</div>
+    </div>
+    
+    <div class="color-box yellow">
+        <img src="yellow.png">
+        <div class="color-name">Yellow</div>
+    </div>
+    
+    <div class="color-box green">
+        <img src="green.png">
+        <div class="color-name">Green</div>
+    </div>
+    
+    <div class="color-box blue">
+        <img src="bluecorect.png">
+        <div class="color-name">Blue</div>
+    </div>
+    
+    <div class="color-box purple">
+        <img src="purple.png">
+        <div class="color-name">Purple</div>
+    </div>
+    <div class="color-box brown">
+        <img src="brown.png">
+        <div class="color-name">Brown</div>
+    </div>
+    <div class="color-box black">
+        <img src="black.jpg">
+        <div class="color-name">Black</div>
+    </div>
+    <div class="color-box white">
+        <img src="white.png">
+        <div class="color-name">White</div>
+    </div>
+    
+    <div class="fun-facts">
+        <h2 style="color: #f4801b;">Fun Color Facts</h2>
+        <ul style="text-align: left;">
+            <li  style="border:2px solid red; padding:10px;box-shadow:4px 4px 8px rgba(237, 97, 97, 5)" ><strong>Red</strong> &nbsp;is the color of apples and fire trucks!</li><br>
+            <li style="border:2px solid orange; padding:10px;box-shadow:4px 4px 8px rgba(243, 183, 78, 5)"><strong>Orange</strong>&nbsp;is named after the fruit - the orange!</li><br>
+            <li style="border:2px solid yellow; padding:10px;box-shadow:4px 4px 8px  rgba(244, 247, 21, 5)"><strong>Yellow</strong>&nbsp;is the color of the sun and bananas!</li><br>
+            <li style="border:2px solid green; padding:10px;box-shadow:4px 4px 8px rgba(22, 117, 5, 5)"><strong>Green</strong>&nbsp;is the color of grass and many trees!</li><br>
+            <li style="border:2px solid blue; padding:10px;box-shadow:4px 4px 8px rgba(22, 82, 234, 5)"><strong>Blue</strong> &nbsp;is the color of the sky and the ocean!</li><br>
+            <li style="border:2px solid purple; padding:10px;box-shadow:4px 4px 8px rgba(128, 17, 165, 5)"><strong>Purple</strong>&nbsp;is a royal color that comes from mixing red and blue!</li><br>
+            <li style="border:2px solid brown; padding:10px;box-shadow:4px 4px 8px rgba(164, 55, 55, 5)"><strong>Brown</strong>&nbsp;is made by mixing all three primary colors (red, blue, and yellow)!</li><br>
+            <li style="border:2px solid black; padding:10px;box-shadow:4px 4px 8px rgba(16, 15, 15, 5)"><strong>Black</strong>&nbsp;is made by mixing all paint colors together (try it with red, blue, and yellow!).</li><br>
+            <li style="border:2px solid whitesmoke; padding:10px;box-shadow:4px 4px 8px rgba(196, 194, 194, 8)"><strong>White</strong>&nbsp;is the color of snow, clouds, milk, and polar bears! ❄️</li>
+        </ul>
+    </div>
+    
+    <div class="activity">
+        <h2 style="color: #f4801b;">Color Mixing Activity</h2>
+        <p>Did you know you can make new colors by mixing other colors?</p>
+        
+        <table border="4" style="margin: 0 auto; border-collapse: collapse; color:#8f635a">
+            <tr>
+                <th style="padding: 20px;">Mix These Colors</th>
+                <th style="padding: 20px;">To Make</th>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Red + Yellow</td>
+                <td  style="padding: 10px; ">Orange</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Blue + Yellow</td>
+                <td style="padding: 10px;">Green</td>
+            </tr>
+            <tr>
+                <td style="padding: 10px;">Red + Blue</td>
+                <td style="padding: 10px;">Purple</td>
+            </tr>
+        </table>
+        
+        <p style="color:grey">Try mixing paints to see these colors appear!</p>
+    </div>
+    
+    
+    
+    <footer>
+        <p> Made with ❤️ for kids learning about colors</p>
+    </footer>
+</body>
+</html>

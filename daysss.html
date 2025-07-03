@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Days of the Week</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body { border:6px solid #ed5b06;
+            margin: 0;
+            background: 
+                linear-gradient(to bottom, #fbceb9 0%, #f4b46b 100%),
+                url('clouds.png');
+            
+            font-family: 'Comic Neue', cursive;
+            min-height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        /* Animated Cloud Background */
+        @keyframes cloudMove {
+            0% { background-position: 0 0; }
+            100% { background-position: 1000px 0; }
+        }
+       
+        
+        header{
+            color: #ed5b06;  
+            text-decoration: underline;
+            padding:10px 10px;
+            margin-top: 0%;
+            border-radius: 50px;
+        }
+        
+        h1 {
+            color: #ed5b06;
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-shadow: 2px 2px 4px rgba(245, 116, 3, 0.9);
+        }
+        
+        .days-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .day-card {border:2px solid #f5894b;
+            background:rgb(247, 178, 137);
+            border-radius: 15px;
+            padding: 20px;
+            width: 120px;
+            box-shadow: 0 4px 8px rgba(225, 116, 38, 0.9);
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .day-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+        
+        .day-name {
+            color:#ec4918;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .day-emoji {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        
+        .today {
+            background: rgb(250, 224, 167);
+            transform: scale(1.05);
+        }
+        
+        button {
+            background: #ec6409;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            font-size: 1.2rem;
+            border-radius: 50px;
+            margin: 30px 0;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background: #cf6f33;
+            transform: scale(1.05);
+        }
+        
+        .song-box {
+            background: linear-gradient(135deg, #FF9A8B 0%, #f6894f 100%);
+            color:whitesmoke;
+            border-radius: 15px;
+            padding: 20px;
+            max-width: 600px;
+            margin: 30px auto;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .day-fact{
+            color:grey;
+        }
+    </style>
+</head>
+<body>
+   <header><h1>🌈 Days of the Week 🌈</h1></header> 
+    <br><br>
+    <div class="days-container">
+        <div class="day-card" id="sunday">
+            <div class="day-emoji">☀️</div>
+            <div class="day-name">Sunday</div>
+            <p class="day-fact">Sunshine day!</p>
+        </div>
+        
+        <div class="day-card" id="monday">
+            <div class="day-emoji">📚</div>
+            <div class="day-name">Monday</div>
+    <p class="day-fact ">Back to school!</p>
+        </div>
+        
+        <div class="day-card" id="tuesday">
+            <div class="day-emoji">🎨</div>
+            <div class="day-name">Tuesday</div>
+            <p  class="day-fact">Art day!</p>
+        </div>
+        
+        <div class="day-card" id="wednesday">
+            <div class="day-emoji">🐘</div>
+            <div class="day-name">Wednesday</div>
+            <p  class="day-fact">Zoo day!</p>
+        </div>
+        
+        <div class="day-card" id="thursday">
+            <div class="day-emoji">⚽</div>
+            <div class="day-name">Thursday</div>
+            <p class="day-fact">Sports day!<p>
+        </div>
+        
+        <div class="day-card" id="friday">
+            <div class="day-emoji">🎉</div>
+            <div class="day-name">Friday</div>
+            <p class="day-fact">Party day!</p>
+        </div>
+        
+        <div class="day-card" id="saturday">
+            <div class="day-emoji">🎠</div>
+            <div class="day-name">Saturday</div>
+            <p class="day-fact">Play day!</p>
+               </div>
+    </div>
+    
+    <button id="songButton">Sing the Days Song!</button>
+    
+    <div class="song-box" id="songBox" style="display:none;">
+        <h2>📢 Days of the Week Song 📢</h2>
+        <p>Sunday, Monday, Tuesday, Wednesday,<br>
+        Thursday, Friday, Saturday!<br><br>
+        Seven days are in a week,<br></p>
+        <h5>Now let's sing them all again!</h5>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Highlight today's day
+            const days = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'];
+            const today = new Date().getDay(); // 0-6 (0=Sunday)
+            $(`#${days[today]}`).addClass('today');
+            
+            
+            
+            // Song button
+            $('#songButton').click(function() {
+                $('#songBox').slideToggle();
+                $(this).text(function(i, text) {
+                    return text === "Sing the Days Song!" ? "Hide Song" : "Sing the Days Song!";
+                });
+            });
+        });
+    </script>
+</body>
+</html>

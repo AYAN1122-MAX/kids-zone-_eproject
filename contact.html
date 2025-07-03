@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - KidsZone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        /* Main Styling */
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background-color: #fbe4ee;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        /* Header */
+        .contact-header {
+            background: #f1a429;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 5px solid #FF6D00;
+        }
+        
+        .contact-header h1 {
+            font-size: 2.5rem;
+            text-shadow: 2px 2px 0 rgba(0,0,0,0.2);
+            margin: 0;
+        }
+        
+        /* Contact Container */
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px 5%;
+            gap: 30px;
+        }
+        
+        /* Contact Methods */
+        .contact-method { border:2px solid #FF6D00;
+            background: rgb(231, 187, 115);
+            border-radius: 15px;
+            padding: 25px;
+            width: 300px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        
+        .contact-method:hover {
+            transform: translateY(-10px);
+        }
+        
+        .contact-icon {
+            font-size: 50px;
+            color: #FF6D00;
+            margin-bottom: 15px;
+        }
+        
+        .contact-method h2 {
+            color: #10519c;
+            margin-top: 0;
+        }
+        
+        /* Contact Form */
+        .contact-form { border:2px solid  rgb(223, 91, 91);
+            background: rgb(234, 152, 152);
+            border-radius: 15px;
+            padding: 30px;
+            max-width: 600px;
+            margin: 30px auto;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .form-group {
+            
+            margin-bottom: 20px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #5D4037;
+            font-weight: bold;
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #FFD600;
+            border-radius: 8px;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 16px;
+        }
+        
+        .submit-btn {
+            background: #f1a429;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            font-family: 'Comic Sans MS', cursive;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        
+        .submit-btn:hover {
+            background: #FF6D00;
+        }
+        
+        /* Footer */
+        footer { border-top: 5px solid #FF6D00;
+            background: #e98a6d;
+            color: white;
+            padding: 30px 5%;
+            margin-top: 40px;
+        }
+        
+        .footer-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-section {
+            margin-bottom: 20px;
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            color: #FFD600;
+        }
+        
+        .contact-info p {
+            margin: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .copyright {
+            text-align: center;
+            width: 100%;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contact-method {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="contact-header">
+        <h1>Contact KidsZone!</h1>
+        <p>We'd love to hear from you!</p>
+    </header>
+    
+    <!-- Contact Methods -->
+    <div class="contact-container">
+        <div class="contact-method">
+            <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <h2>Email Us</h2>
+            <p>hello@kidszone.com</p>
+            <p>support@kidszone.com</p>
+        </div>
+        
+        <div class="contact-method">
+            <div class="contact-icon">
+                <i class="fas fa-phone-alt"></i>
+            </div>
+            <h2>Call Us</h2>
+            <p>+92 300 1234567</p>
+            <p>+92 21 34567890</p>
+        </div>
+        
+        <div class="contact-method">
+            <div class="contact-icon">
+                <i class="fas fa-clock"></i>
+            </div>
+            <h2>Opening Hours</h2>
+            <p>Monday - Friday: 9AM - 5PM</p>
+            <p>Saturday: 10AM - 2PM</p>
+        </div>
+    </div>
+    
+    <!-- Contact Form -->
+    <div class="contact-form">
+        <h2 style="color: #10519c;; text-align: center;">Send Us a Message</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" placeholder="What's this about?">
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" rows="5" placeholder="Type your message here..." required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Send Message</button>
+        </form>
+    </div>
+    
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="section-title">About KidsZone</div>
+                <p>Making learning fun for kids since 2020!<br> We create educational content that helps <br>children grow while having fun.</p>
+            </div>
+            <br>
+            <div class="footer-section">
+                <div class="section-title">Quick Links</div>
+                <p><a href="" style="color: white; text-decoration: none;">Letters</a></p>
+                <p><a href="maths.html" style="color: white; text-decoration: none;">Maths</a></p>
+                <p><a href="rhymes.html" style="color: white; text-decoration: none;">Poems</a></p>
+                <p><a href="animal.html" style="color: white; text-decoration: none;">Animals</a></p>
+                <p><a href="weg.html" style="color: white; text-decoration: none;"></a>Vegetable</p>
+                <p><a href="colors.html" style="color: white; text-decoration: none;">colors</a></p>
+                <p><a href="daysss.html" style="color: white; text-decoration: none;">Days</a></p>
+                <p><a href="months.html" style="color: white; text-decoration: none;">Months </a></p>
+            </div>
+            
+            <div class="footer-section">
+                <div class="section-title">Visit Us</div>
+                <div class="contact-info">
+                    <p>
+                        <i class="fas fa-map-marker-alt" style="font-size: 20px;"></i>
+                        <a href="https://maps.google.com/?q=Aptech+Jameel+Jalabi+road,+Block+B+North+Nazimabad,+Karachi" 
+                           target="_blank"
+                           style="color: inherit; text-decoration: none;">
+                          Aptech Jameel Jalabi Road, Block B North Nazimabad, Karachi
+                        </a>
+                    </p>
+                    <p><i class="fas fa-bus" style="font-size: 20px;"></i> Parking available on site</p>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 KidsZone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

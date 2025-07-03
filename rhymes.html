@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Colorful Nursery Rhymes</title>
+  <style>
+    body {
+      border: 6px solid #f4801b;
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #ffeaa7, #fab1a0);
+    }
+
+    header {
+      background-color:#fa9e4d;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    .intro {
+      text-align: center;
+      color: grey;
+      font-size: 1rem;
+      padding: 10px 20px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    .rhyme-grid {
+      display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    padding: 0 5%;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    
+    }
+
+    .rhyme-box {
+      height: 260px;
+      
+      background: rgb(246, 201, 105);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    text-align: center;
+    }
+
+    .rhyme-box:hover {
+      transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,5);
+    }
+
+    .rhyme-box img {
+      margin-top: 30px;
+      border-radius: 10px;;
+      width: 80%;
+    height: 150px;
+    object-fit: fill;
+    border-bottom: 3px solid #FFD600;
+    }
+
+    .rhyme-title {
+      padding: 25px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #1565C0;
+    background: #E3F2FD;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      font-size: 0.9rem;
+      background-color: #ffeaa7;
+      color: #2d3436;
+    }
+    a{
+      text-decoration: none;
+      display:block;
+    }
+
+    @media screen and (max-width: 600px) {
+      .rhyme-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>Colorful Nursery Rhymes</header>
+<br>
+  <div class="intro">
+    A fun collection of rhymes in English and Urdu for kids – watch, enjoy, and sing along!
+  </div>
+<br>
+  <div class="rhyme-grid">
+     <div class="rhyme-box">
+      <a href="https://youtu.be/71h8MZshGSs?si=lgBGbRc7VT7h2Rgg" target="_blank">
+        <img src="abc.png" alt="abcs" />
+        <div class="rhyme-title">ABCD</div>
+      </a>
+    </div>
+    <div class="rhyme-box">
+      <a href="https://www.youtube.com/watch?v=yCjJyiqpAuU" target="_blank">
+        <img src="TWINKLE.jpeg" alt="Twinkle Twinkle" />
+        <div class="rhyme-title">Twinkle Twinkle Little Star</div>
+      </a>
+    </div>
+    <div class="rhyme-box">
+      <a href="https://www.youtube.com/watch?v=nrv495corBc" target="_blank">
+        <img src="thehumpty.jpg" alt="Humpty Dumpty" />
+        <div class="rhyme-title">Humpty Dumpty</div>
+      </a>
+    </div>
+    <div class="rhyme-box">
+      <a href="https://youtu.be/6rRRAVSilss?si=6JRnv2o8TaijBDt1" target="_blank">
+        <img src="the tamatar.jpg" alt="Ahat Tamatar" />
+        <div class="rhyme-title">Aha Tamatar Bade Mazedar</div>
+      </a>
+    </div>
+    <div class="rhyme-box">
+      <a href="https://youtu.be/9mmF8zOlh_g?si=TwzehFBej7TAyZsz" target="_blank">
+        <img src="bingo.png" alt="bingo" />
+        <div class="rhyme-title">Bingo</div>
+      </a>
+    </div>
+    
+    <div class="rhyme-box">
+      <a href="https://youtu.be/9bQqTgCNmmI?si=jCxFEILJRxmAsUka" target="_blank">
+        <img src="ALOO.jpeg" alt="Aloo Mian" />
+        <div class="rhyme-title">Aloo Mian Kahan Gaye Thay?</div>
+      </a>
+    </div>
+
+    <div class="rhyme-box">
+      <a href="https://youtu.be/e_04ZrNroTo?si=E0uBfGOiTY2p8XJl" target="_blank">
+        <img src="wheelonthebus.jpg"  alt="wheel on the bus"/>
+        <div class="rhyme-title">Wheel On The Bus</div>
+      </a>
+    </div>
+   
+    <div class="rhyme-box">
+      <a href="https://youtu.be/0-Y7Qi3fMs0?si=mvqtI-MSngh1AG_8" target="_blank">
+        <img src="londonbridge.jpg" alt="londonbridge" />
+        <div class="rhyme-title">London Bridge</div>
+      </a>
+    </div>
+    <div class="rhyme-box ">
+      <a href="https://youtu.be/MR5XSOdjKMA?si=HIyXkI5YQWAftOHa" target="_blank">
+        <img src="babablack.jpg" alt="baba black sheep" />
+        <div class="rhyme-title">Baa Baa Black Sheep</div>
+      </a>
+    </div>
+  </div>
+
+  <footer>&copy; 2025 Rhymes for Kids</footer>
+
+</body>
+</html>
